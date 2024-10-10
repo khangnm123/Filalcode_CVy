@@ -73,18 +73,6 @@
             height: 20px;
             margin: 10px 10px;
         }
-        .product_list{
-            &-content{
-                .col-8{
-                    width: 75%;
-                }
-                .content_right{
-                    .item{
-                        width: auto;
-                    }
-                }
-            }
-        }
     }
     .list_icon{
         &-content{
@@ -110,6 +98,9 @@
                 }
             }
         }
+    }
+    .center_flex{
+        width: 100%;
     }
 }
 @media only screen and (max-width:1015px) {
@@ -409,9 +400,6 @@
             }
         }
     }
-    .col-3{
-        width: 33% !important;
-    }
 }
 @media only screen and (max-width:700px){
     .footer_content{
@@ -427,9 +415,7 @@
             }
         }
     }
-    .col-9{
-        width: 70% !important;
-    }
+
 }
 @media only screen and (max-width:680px){
 .card_wrapper{
@@ -564,9 +550,6 @@
     }
     .swiper-scrollbar{
         display: none !important;
-    }
-    .row{
-        display: block !important;
     }
     .col-9{
         width: 100% !important;

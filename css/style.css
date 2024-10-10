@@ -160,68 +160,6 @@
   object-position: center;
   background-repeat: no-repeat;
 }
-.container .product_list {
-  width: 100%;
-  position: relative;
-  padding: 45px 0px;
-}
-.container .product_list-content {
-  display: flex;
-  justify-content: center;
-}
-.container .product_list-content .content_left {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.container .product_list-content .content_left h2 {
-  font-size: 24px;
-  color: #000;
-  font-weight: bold;
-}
-.container .product_list-content .content_left .filter {
-  font-size: 18px;
-  font-weight: 100;
-  padding: 15px 0px 20px 0px;
-}
-.container .product_list-content .content_left p {
-  font-size: 18px;
-  padding: 0px 10px;
-  color: #000000;
-}
-.container .product_list-content .content_right {
-  position: relative;
-}
-.container .product_list-content .content_right .product_content {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  column-gap: 10px;
-  row-gap: 40px;
-}
-.container .product_list-content .content_right .item {
-  width: 265px;
-  height: auto;
-  position: relative;
-  text-align: center;
-  margin: 0px 10px;
-  display: none;
-}
-.container .product_list-content .content_right .item .title {
-  font-size: 16px;
-  color: #000000;
-  font-weight: bold;
-  padding-top: 24px;
-  padding-bottom: 16px;
-}
-.container .product_list-content .content_right .item .color {
-  text-transform: uppercase;
-  font-size: 14px;
-  text-align: center;
-  justify-content: center;
-}
-.container .product_list-content .content_right .item .color b {
-  font-weight: bold;
-  color: #000000;
-}
 .container .banner_content {
   position: relative;
   width: 100%;
@@ -287,6 +225,47 @@
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 100;
+}
+.container .item {
+  position: relative;
+  text-align: center;
+  display: none;
+  margin-top: 30px;
+}
+.container .item .title {
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+.container .content_left h2 {
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+}
+.container .content_left .filter {
+  font-size: 18px;
+  font-weight: 100;
+  padding: 15px 0px 20px 0px;
+}
+.container .content_left p {
+  font-size: 18px;
+  padding: 0px 10px;
+  color: #000000;
+}
+.container .content_right .row {
+  justify-content: left !important;
+}
+.container .content_right .color {
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+}
+.container .content_right .color b {
+  font-weight: bold;
+  color: #000000;
 }
 
 .thumnail_text {
@@ -379,8 +358,9 @@
 
 .center_flex {
   display: flex;
-  width: 100%;
+  width: 1200px;
   justify-content: center;
+  margin: auto;
 }
 
 .accordion1 {
@@ -429,6 +409,7 @@ h3.range-title {
 .range-slider .center_flex {
   position: relative;
   top: -45px;
+  width: 100% !important;
 }
 
 .range-slider::after {
@@ -535,6 +516,7 @@ input[type=range]::-moz-range-thumb {
 .double-slider-box1 .range-slider1 .center_flex {
   position: relative;
   top: -45px;
+  width: 100% !important;
 }
 .double-slider-box1 .range-slider1::after {
   content: "";
@@ -630,8 +612,8 @@ input[type=checkbox]::before {
   position: absolute;
   top: 4px;
   left: 9px;
-  width: 5px;
-  height: 13px;
+  width: 8px;
+  height: 14px;
   border: 4px solid transparent;
   border-left: none;
   border-top: none;
@@ -1433,12 +1415,6 @@ ion-icon {
     height: 20px;
     margin: 10px 10px;
   }
-  .container .product_list-content .col-8 {
-    width: 75%;
-  }
-  .container .product_list-content .content_right .item {
-    width: auto;
-  }
   .list_icon-content .icon_list ul {
     flex-wrap: wrap;
   }
@@ -1447,6 +1423,9 @@ ion-icon {
   }
   .card_wrapper .centerr_flex .flex_content .right h3 {
     font-size: 24px;
+  }
+  .center_flex {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 1015px) {
@@ -1633,9 +1612,6 @@ ion-icon {
   .picture_content .center_flex h4 {
     width: 80%;
   }
-  .col-3 {
-    width: 33% !important;
-  }
 }
 @media only screen and (max-width: 700px) {
   .footer_content-bg .text_content {
@@ -1646,9 +1622,6 @@ ion-icon {
   .footer_content-bg .text_content ul {
     padding-top: 20px;
     padding-right: 20px;
-  }
-  .col-9 {
-    width: 70% !important;
   }
 }
 @media only screen and (max-width: 680px) {
@@ -1756,9 +1729,6 @@ ion-icon {
   }
   .swiper-scrollbar {
     display: none !important;
-  }
-  .row {
-    display: block !important;
   }
   .col-9 {
     width: 100% !important;
@@ -1989,8 +1959,8 @@ p {
 }
 
 .row {
-  flex-wrap: unset !important;
-  padding: 0px 10px;
+  padding: 1% 10px;
+  justify-content: center !important;
 }
 
 /*# sourceMappingURL=style.css.map */

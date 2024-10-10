@@ -18,6 +18,7 @@ h3.range-title {
     .center_flex{
         position: relative;
         top: -45px;
+        width: 100% !important;
     }
 }
 .range-slider::after{
@@ -119,6 +120,7 @@ input[type="range"]::-moz-range-thumb {
         .center_flex{
             position: relative;
             top: -45px;
+            width: 100% !important;
         }
     }
     .range-slider1::after{
