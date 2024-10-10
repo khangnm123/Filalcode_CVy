@@ -1253,7 +1253,7 @@ ion-icon {
 }
 
 .picture_content {
-  padding: 0px 10px;
+  padding: 10px 10px;
 }
 .picture_content .center_flex {
   display: block;
@@ -1934,10 +1934,6 @@ ion-icon {
   }
   .card_wrapper .centerr_flex .flex_content .right .icon {
     width: 80%;
-  }
-  .card_wrapper .option_flex img {
-    width: 100px;
-    height: 100px;
   }
   .product_details .center_flex h4 {
     width: 100%;
