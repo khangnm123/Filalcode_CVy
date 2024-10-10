@@ -134,17 +134,17 @@ ion-icon.is-active{
 }
 
 //Accordion Content
-.accordion{
+.accordion2{
     display: none;
 }
-.accordion{
+.accordion2{
     width: 100%;
     background:none;
-    margin: 0 5px;
+    margin: 0 -5px;
     border: none;
     outline: none;
   }
-  .accordion .accordion-content{
+  .accordion2 .accordion-content{
     margin: 5px 0px;
     background: #FFF7F0;
     overflow: hidden;

@@ -7,11 +7,18 @@ label{
 }
 ul{
     margin: unset !important;
+    padding-left: unset !important;
 }
 p{
     margin: unset !important;
 }
 .row{
-    padding: 1% 10px;
+    padding: unset !important;
+    margin: unset !important;
     justify-content: center !important;
+}
+.row>*{
+    padding-left: 3px;
+    padding-right: 3px;
+    flex-shrink: unset !important;
 }

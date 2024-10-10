@@ -1,31 +1,25 @@
 .card_wrapper{
     position: relative;
     width: 100%;
-    .centerr_flex{
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0px 15px;
-        h2{
-            text-transform: uppercase;
-            padding: 20px 0px;
-        }
-        .flex_content{
-            display: flex;
+    padding: 30px 5px;
+    .center_flex{
+        .row{
+            width: 100%;
+            justify-content: space-around !important;
             .left{
-                width: 100%;
-                position: relative;
-                padding-right: 75px;
-                .option_flex{
-                    display: flex;
-                    justify-content: space-around;
-                    padding: 20px 0px;
+                padding-right: 30px;
+                .main_image{
+                    width: 100%;
+                    img{
+                        
+                        padding-bottom: 20px;
+                    }
                 }
             }
             .right{
-                position: relative;
-                width: 100%;
                 h3{
                     font-size: 32px;
+                    font-weight: bold;
                 }
                 p{
                     color: #000000;
@@ -74,17 +68,17 @@
                             color: #FFFFFF;
                         }
                     }
-                    .bg_heart{
-                        .heart1{
-                            position: relative;
-                            bottom: unset;
-                            right: unset;
-                            ion-icon{
-                                display: block;
-                                width: 30px;
-                                height: 30px;
-                                background: #9747FF;
-                            }
+                }
+                .bg_heart{
+                    .heart1{
+                        position: relative;
+                        bottom: unset;
+                        right: unset;
+                        ion-icon{
+                            display: block;
+                            width: 30px;
+                            height: 30px;
+                            background: #9747FF;
                         }
                     }
                 }
@@ -123,6 +117,7 @@
             }
         }
     }
+
 }
 .product_details{
     padding: 0px 10px;

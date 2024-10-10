@@ -86,10 +86,12 @@
 
     //SCSS Details
     .card_wrapper{
-        .centerr_flex{
-            .flex_content{
+        .center_flex{
+            .row{
                 .left{
-                    padding-right: 15px;
+                    .thumnail_text a{
+                        padding-top: 130%;
+                    }
                 }
                 .right{
                     h3{
@@ -173,6 +175,22 @@
     .picture_content .center_flex .content_title p{
         font-size: 15px;
     }
+    .card_wrapper{
+        .center_flex{
+            .row{
+                .left{
+                    .thumnail_text a{
+                        padding-top: 130%;
+                    }
+                }
+                .right{
+                 .button_content{
+                    padding-top: 25px;
+                 }
+                }
+            }
+        }
+    }
 }
 @media only screen and (max-width:882px) {
     .container{
@@ -252,6 +270,40 @@
     //Deatils Responsive
     .card_wrapper .centerr_flex .flex_content .right .button_content{
         padding-top: 20px !important;
+    }
+    .card_wrapper{
+        .center_flex{
+            .row{
+                .left{
+                    .thumnail_text a{
+                        padding-top: 130%;
+                    }
+                }
+                .right{
+                    h3{
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                    #dola{
+                        font-size: 24px;
+                        padding: 8px 0px;
+                    }
+                    .size{
+                        ul li{
+                            padding: 8px 10px;
+                        }
+                    }
+                    .button_content{
+                        button{
+                            padding: 5px 50px;
+                        }
+                    }
+
+                }
+            }
+        }
     }
 }
 @media only screen and (max-width:768px) {
@@ -415,7 +467,43 @@
             }
         }
     }
-
+    .card_wrapper{
+        .left{
+            width: 100%;
+        }
+        .center_flex{
+            .row{
+                display: flex !important;
+                flex-wrap: wrap !important;
+                justify-content: center!important;
+                .right{
+                    h3{
+                        font-size: 23px;
+                        padding: 10px 0px;
+                    }
+                    .rate{
+                        justify-content: center;
+                    }
+                    .color{
+                        justify-content: center;
+                    }
+                    .size{
+                        ul{
+                            justify-content: center;
+                        }
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .right{
+            width: 100%;
+            text-align: center;
+          
+        }
+    }
 }
 @media only screen and (max-width:680px){
 .card_wrapper{
@@ -545,7 +633,10 @@
     .double-slider-box{
         display: none;
     }
-    .accordion1{
+    .list_contest{
+        display: none !important;
+    }
+    .accordion2{
         display: block !important;
     }
     .swiper-scrollbar{
@@ -858,6 +949,9 @@
     }
     .product_details .center_flex ul li{
         margin: 10px 5px;
+    }
+    .footer_content{
+        padding: 0px 0px;
     }
 }
 @media only screen and (max-width:325px) {

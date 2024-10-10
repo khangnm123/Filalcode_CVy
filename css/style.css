@@ -267,6 +267,9 @@
   font-weight: bold;
   color: #000000;
 }
+.container .product_list {
+  padding: 30px 0px;
+}
 
 .thumnail_text {
   display: inline-block;
@@ -313,29 +316,24 @@
   background-color: #D9D9D9;
   position: relative;
   width: 100%;
+  padding: 0px 10px;
 }
-.footer_content-bg {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 10px;
+.footer_content .row {
+  justify-content: space-between !important;
+  width: 100% !important;
 }
-.footer_content-bg .text_content {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.footer_content-bg .text_content ul {
+.footer_content ul {
   list-style-type: none;
+  padding: 10px 10px;
 }
-.footer_content-bg .text_content ul li {
+.footer_content ul li {
   padding-top: 10px;
 }
-.footer_content-bg .text_content ul li #test {
+.footer_content ul li #test {
   font-size: 24px;
   color: #000000;
 }
-.footer_content-bg .text_content ul li a {
+.footer_content ul li a {
   text-decoration: none;
   color: #000000;
   font-size: 16px;
@@ -363,16 +361,16 @@
   margin: auto;
 }
 
-.accordion1 {
+.accordion2 {
   display: none;
 }
-.accordion1 .accordion-content {
+.accordion2 .accordion-content {
   background-color: #000000;
 }
-.accordion1 .accordion-content .center_flex {
+.accordion2 .accordion-content .center_flex {
   background-color: unset !important;
 }
-.accordion1 .accordion-content .description {
+.accordion2 .accordion-content .description {
   background-color: white !important;
   color: #000;
 }
@@ -924,25 +922,25 @@ ion-icon {
   color: #000000;
 }
 
-.accordion {
+.accordion2 {
   display: none;
 }
 
-.accordion {
+.accordion2 {
   width: 100%;
   background: none;
-  margin: 0 5px;
+  margin: 0 -5px;
   border: none;
   outline: none;
 }
 
-.accordion .accordion-content {
+.accordion2 .accordion-content {
   margin: 5px 0px;
   background: #FFF7F0;
   overflow: hidden;
   background-color: #9747FF;
 }
-.accordion .accordion-content header .title {
+.accordion2 .accordion-content header .title {
   color: #FFFFFF;
   width: 100%;
   font-size: 16px;
@@ -950,10 +948,10 @@ ion-icon {
   text-align: center;
   text-transform: uppercase;
 }
-.accordion .accordion-content header i {
+.accordion2 .accordion-content header i {
   color: #FFFFFF;
 }
-.accordion .accordion-content .center_flex {
+.accordion2 .accordion-content .center_flex {
   background-color: #D9D9D9;
   text-align: left;
 }
@@ -1109,122 +1107,111 @@ ion-icon {
 .card_wrapper {
   position: relative;
   width: 100%;
+  padding: 30px 5px;
 }
-.card_wrapper .centerr_flex {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0px 15px;
-}
-.card_wrapper .centerr_flex h2 {
-  text-transform: uppercase;
-  padding: 20px 0px;
-}
-.card_wrapper .centerr_flex .flex_content {
-  display: flex;
-}
-.card_wrapper .centerr_flex .flex_content .left {
+.card_wrapper .center_flex .row {
   width: 100%;
-  position: relative;
-  padding-right: 75px;
+  justify-content: space-around !important;
 }
-.card_wrapper .centerr_flex .flex_content .left .option_flex {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px 0px;
+.card_wrapper .center_flex .row .left {
+  padding-right: 30px;
 }
-.card_wrapper .centerr_flex .flex_content .right {
-  position: relative;
+.card_wrapper .center_flex .row .left .main_image {
   width: 100%;
 }
-.card_wrapper .centerr_flex .flex_content .right h3 {
+.card_wrapper .center_flex .row .left .main_image img {
+  padding-bottom: 20px;
+}
+.card_wrapper .center_flex .row .right h3 {
   font-size: 32px;
+  font-weight: bold;
 }
-.card_wrapper .centerr_flex .flex_content .right p {
+.card_wrapper .center_flex .row .right p {
   color: #000000;
   font-size: 18px;
 }
-.card_wrapper .centerr_flex .flex_content .right #dola {
+.card_wrapper .center_flex .row .right #dola {
   font-size: 32px;
   font-weight: bold;
   color: #000;
   padding: 12px 0px;
 }
-.card_wrapper .centerr_flex .flex_content .right h5 {
+.card_wrapper .center_flex .row .right h5 {
   font-size: 24px;
   font-weight: bold;
 }
-.card_wrapper .centerr_flex .flex_content .right .size {
+.card_wrapper .center_flex .row .right .size {
   padding: 15px 0px 30px 0px;
 }
-.card_wrapper .centerr_flex .flex_content .right .size ul {
+.card_wrapper .center_flex .row .right .size ul {
   display: flex;
   list-style-type: none;
 }
-.card_wrapper .centerr_flex .flex_content .right .size ul li {
+.card_wrapper .center_flex .row .right .size ul li {
   border: 1px solid #000;
   padding: 15px 15px;
   text-align: center;
 }
-.card_wrapper .centerr_flex .flex_content .right .size ul li p {
+.card_wrapper .center_flex .row .right .size ul li p {
   font-size: 20px;
   font-weight: bold;
 }
-.card_wrapper .centerr_flex .flex_content .right .button_content {
+.card_wrapper .center_flex .row .right .button_content {
   border-top: 2px solid #757575;
   padding-top: 50px;
   display: flex;
   align-items: center;
 }
-.card_wrapper .centerr_flex .flex_content .right .button_content button {
+.card_wrapper .center_flex .row .right .button_content button {
   border: 2px solid #000;
   outline: none;
   background: #9747FF;
   padding: 10px 70px;
   margin-right: 20px;
 }
-.card_wrapper .centerr_flex .flex_content .right .button_content button a {
+.card_wrapper .center_flex .row .right .button_content button a {
   text-decoration: none;
   font-size: 21px;
   color: #FFFFFF;
 }
-.card_wrapper .centerr_flex .flex_content .right .button_content .bg_heart .heart1 {
+.card_wrapper .center_flex .row .right .bg_heart .heart1 {
   position: relative;
   bottom: unset;
   right: unset;
 }
-.card_wrapper .centerr_flex .flex_content .right .button_content .bg_heart .heart1 ion-icon {
+.card_wrapper .center_flex .row .right .bg_heart .heart1 ion-icon {
   display: block;
   width: 30px;
   height: 30px;
   background: #9747FF;
 }
-.card_wrapper .centerr_flex .flex_content .right .icon {
+.card_wrapper .center_flex .row .right .icon {
   display: flex;
   align-items: center;
   padding: 20px 0px;
 }
-.card_wrapper .centerr_flex .flex_content .right .icon #share {
+.card_wrapper .center_flex .row .right .icon #share {
   text-transform: uppercase;
   font-size: 18px;
   color: #000000;
   font-weight: bold;
 }
-.card_wrapper .centerr_flex .flex_content .right .icon ul {
+.card_wrapper .center_flex .row .right .icon ul {
   display: flex;
   list-style-type: none;
 }
-.card_wrapper .centerr_flex .flex_content .right .icon ul li {
+.card_wrapper .center_flex .row .right .icon ul li {
   padding: 0px 10px;
 }
-.card_wrapper .centerr_flex .flex_content .right .icon ul li a {
+.card_wrapper .center_flex .row .right .icon ul li a {
   text-decoration: none;
 }
-.card_wrapper .centerr_flex .flex_content .right .icon ul li a ion-icon {
+.card_wrapper .center_flex .row .right .icon ul li a ion-icon {
   background-color: #000000;
   width: 20px;
   height: 20px;
 }
-.card_wrapper .centerr_flex .flex_content .right .icon ul li a #share1 {
+.card_wrapper .center_flex .row .right .icon ul li a #share1 {
   background: none;
   color: #000000;
   width: 20px;
@@ -1418,10 +1405,10 @@ ion-icon {
   .list_icon-content .icon_list ul {
     flex-wrap: wrap;
   }
-  .card_wrapper .centerr_flex .flex_content .left {
-    padding-right: 15px;
+  .card_wrapper .center_flex .row .left .thumnail_text a {
+    padding-top: 130%;
   }
-  .card_wrapper .centerr_flex .flex_content .right h3 {
+  .card_wrapper .center_flex .row .right h3 {
     font-size: 24px;
   }
   .center_flex {
@@ -1465,6 +1452,12 @@ ion-icon {
   }
   .picture_content .center_flex .content_title p {
     font-size: 15px;
+  }
+  .card_wrapper .center_flex .row .left .thumnail_text a {
+    padding-top: 130%;
+  }
+  .card_wrapper .center_flex .row .right .button_content {
+    padding-top: 25px;
   }
 }
 @media only screen and (max-width: 882px) {
@@ -1516,6 +1509,25 @@ ion-icon {
   }
   .card_wrapper .centerr_flex .flex_content .right .button_content {
     padding-top: 20px !important;
+  }
+  .card_wrapper .center_flex .row .left .thumnail_text a {
+    padding-top: 130%;
+  }
+  .card_wrapper .center_flex .row .right h3 {
+    font-size: 18px;
+  }
+  .card_wrapper .center_flex .row .right p {
+    font-size: 16px;
+  }
+  .card_wrapper .center_flex .row .right #dola {
+    font-size: 24px;
+    padding: 8px 0px;
+  }
+  .card_wrapper .center_flex .row .right .size ul li {
+    padding: 8px 10px;
+  }
+  .card_wrapper .center_flex .row .right .button_content button {
+    padding: 5px 50px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1623,6 +1635,34 @@ ion-icon {
     padding-top: 20px;
     padding-right: 20px;
   }
+  .card_wrapper .left {
+    width: 100%;
+  }
+  .card_wrapper .center_flex .row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .card_wrapper .center_flex .row .right h3 {
+    font-size: 23px;
+    padding: 10px 0px;
+  }
+  .card_wrapper .center_flex .row .right .rate {
+    justify-content: center;
+  }
+  .card_wrapper .center_flex .row .right .color {
+    justify-content: center;
+  }
+  .card_wrapper .center_flex .row .right .size ul {
+    justify-content: center;
+  }
+  .card_wrapper .center_flex .row .right p {
+    font-size: 18px;
+  }
+  .card_wrapper .right {
+    width: 100%;
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 680px) {
   .card_wrapper .centerr_flex .flex_content {
@@ -1724,7 +1764,10 @@ ion-icon {
   .double-slider-box {
     display: none;
   }
-  .accordion1 {
+  .list_contest {
+    display: none !important;
+  }
+  .accordion2 {
     display: block !important;
   }
   .swiper-scrollbar {
@@ -1935,6 +1978,9 @@ ion-icon {
   .product_details .center_flex ul li {
     margin: 10px 5px;
   }
+  .footer_content {
+    padding: 0px 0px;
+  }
 }
 @media only screen and (max-width: 325px) {
   .container .nav_top p {
@@ -1952,6 +1998,7 @@ label {
 
 ul {
   margin: unset !important;
+  padding-left: unset !important;
 }
 
 p {
@@ -1959,8 +2006,15 @@ p {
 }
 
 .row {
-  padding: 1% 10px;
+  padding: unset !important;
+  margin: unset !important;
   justify-content: center !important;
+}
+
+.row > * {
+  padding-left: 3px;
+  padding-right: 3px;
+  flex-shrink: unset !important;
 }
 
 /*# sourceMappingURL=style.css.map */
