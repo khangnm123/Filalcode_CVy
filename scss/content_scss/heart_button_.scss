@@ -54,12 +54,7 @@ ion-icon.is-active{
   }
   //Icon
   .list_icon{
-    width: 100%;
-    position: relative;
     &-content{
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px 0px;
         .icon_list{
             ul{
                 list-style-type: none;
@@ -274,8 +269,11 @@ ion-icon.is-active{
     display: none;
   }
   .menu1{
-    display: none;
-}
+    i{
+        font-size: 30px;
+        color: #FFFFFF;
+    }
+  }
 .swiper-scrollbar-horizontal{
     left: var(--swiper-scrollbar-sides-offset,28%) !important;
     bottom:var(--swiper-scrollbar-bottom,65px) !important;

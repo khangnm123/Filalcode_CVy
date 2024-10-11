@@ -28,69 +28,43 @@
   display: none;
 }
 .container .nav_bottom {
-  width: 100%;
-  background-color: #000;
+  background-color: #000000;
 }
-.container .nav_bottom-center {
-  position: relative;
-}
-.container .nav_bottom-center .list_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container .nav_bottom-center .list_container img {
-  height: 41px;
-}
-.container .nav_bottom-center .ul_list {
-  display: flex;
-  align-items: center;
+.container .ul_list {
   list-style-type: none;
-  justify-content: center;
-  padding: 10px 0px;
 }
-.container .nav_bottom-center .ul_list li {
-  padding: 15px 45px;
-}
-.container .nav_bottom-center .ul_list li a {
-  color: white;
+.container .ul_list li a {
   text-decoration: none;
-  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: bold;
 }
-.container .nav_bottom-center .ul_list li a #icon {
-  font-size: 30px;
+.container .ul_list li i {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
 }
-.container .nav_bottom-center .ul_list li a i {
-  font-size: 19px;
-}
-.container .nav_bottom-center .list_ionc {
-  display: flex;
-  align-items: center;
+.container .list_ionc {
   list-style-type: none;
-  justify-content: center;
-  padding: 10px 0px;
 }
-.container .nav_bottom-center .list_ionc li {
-  padding: 0px 15px;
+.container .list_ionc li {
+  margin: 0px 10px;
 }
-.container .nav_bottom-center .list_ionc li a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
+.container .list_ionc li a {
+  font-size: 18px;
 }
-.container .nav_bottom-center .list_ionc li a #icon {
-  font-size: 30px;
+.container .list_ionc li a i {
+  font-size: 32px;
+  color: #FFFFFF;
 }
 .container .input_text {
-  width: 320px;
+  width: 100%;
   height: 45px;
   background: #D9D9D9;
   border: 1px solid #D9D9D9;
-  padding: 20px 20px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 30px;
+  margin: 10px 10px;
 }
 .container .input_text input {
   border: none;
@@ -99,26 +73,6 @@
   width: 100%;
   color: #000;
   font-size: 18px;
-}
-.container .input_text1 {
-  width: 320px;
-  height: 45px;
-  background: #D9D9D9;
-  border: 1px solid #D9D9D9;
-  padding: 20px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 10px 30px;
-  display: none;
-}
-.container .input_text1 input {
-  border: none;
-  outline: none;
-  background: none;
-  width: 100%;
-  color: #000;
-  font-size: 16px;
 }
 .container .carousel {
   position: relative;
@@ -161,9 +115,8 @@
   background-repeat: no-repeat;
 }
 .container .banner_content {
-  position: relative;
-  width: 100%;
   background-color: #000000;
+  padding: 10px 0px;
 }
 .container .banner_content-bg {
   background: url("../image/Details/1440x 176 pc mới.gif");
@@ -206,13 +159,9 @@
   font-weight: bold;
 }
 .container .footer_end {
-  width: 100%;
-  position: relative;
   background-color: #9747FF;
 }
 .container .footer_end-bg {
-  display: flex;
-  justify-content: center;
   padding: 30px 10px;
 }
 .container .footer_end-bg .text_content {
@@ -269,6 +218,27 @@
 }
 .container .product_list {
   padding: 30px 0px;
+}
+
+.input_text1 {
+  width: 100%;
+  height: 45px;
+  background: #D9D9D9;
+  border: 1px solid #D9D9D9;
+  padding: 20px 20px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 30px;
+  display: none;
+}
+.input_text1 input {
+  border: none;
+  outline: none;
+  background: none;
+  width: 100%;
+  color: #000;
+  font-size: 16px;
 }
 
 .thumnail_text {
@@ -384,6 +354,10 @@
 }
 .container .carousel .carousel_content .button_register button:hover a {
   color: #FFFFFF;
+}
+
+#club {
+  font-size: 16px;
 }
 
 .double-slider-box {
@@ -835,15 +809,6 @@ ion-icon {
   padding: 5px 5px;
 }
 
-.list_icon {
-  width: 100%;
-  position: relative;
-}
-.list_icon-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 0px;
-}
 .list_icon-content .icon_list ul {
   list-style-type: none;
   display: flex;
@@ -1068,8 +1033,9 @@ ion-icon {
   display: none;
 }
 
-.menu1 {
-  display: none;
+.menu1 i {
+  font-size: 30px;
+  color: #FFFFFF;
 }
 
 .swiper-scrollbar-horizontal {
@@ -1362,13 +1328,17 @@ ion-icon {
   display: none !important;
 }
 
+@media only screen and (max-width: 1600px) {
+  .container .nav_bottom-center .ul_list li a {
+    font-size: 15px;
+  }
+  #club {
+    font-size: 18px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .container .product_list-content .content_right .product_content {
     grid-template-columns: auto auto;
-  }
-  .container .nav_bottom-center .list_container {
-    justify-content: space-between;
-    padding: 5px 5px;
   }
   .container .nav_bottom-center .list_container img {
     display: none;
@@ -1385,7 +1355,7 @@ ion-icon {
   }
   .container .input_text1 {
     display: flex;
-    width: 210px;
+    width: 100%;
     height: 20px;
     padding: 15px 20px;
     margin: 10px 15px;
@@ -1397,11 +1367,6 @@ ion-icon {
   }
 }
 @media only screen and (max-width: 1180px) {
-  .container .input_text {
-    width: 220px;
-    height: 20px;
-    margin: 10px 10px;
-  }
   .list_icon-content .icon_list ul {
     flex-wrap: wrap;
   }
@@ -1415,25 +1380,12 @@ ion-icon {
     width: 100%;
   }
 }
-@media only screen and (max-width: 1015px) {
-  .container .nav_bottom-center .ul_list li {
-    padding: 15px 10px;
-  }
-  .container .input_text {
-    width: 180px;
-    margin: 10px 10px;
-  }
-}
 @media only screen and (max-width: 1000px) {
-  .container .carousel .carousel_content .button_register {
-    left: 8%;
+  .ul_list li a {
+    font-size: 14px;
   }
-  .container .carousel .carousel_content .button_register button {
-    width: 240px;
-    height: 55px;
-  }
-  .container .carousel .carousel_content .button_register button a {
-    font-size: 18px;
+  .nav_bottom img {
+    height: 30px;
   }
 }
 @media only screen and (max-width: 930px) {
@@ -1479,10 +1431,6 @@ ion-icon {
   .container .nav_bottom-center .ul_list1 li a #icon {
     font-size: 24px;
   }
-  .container .input_text {
-    width: 170px;
-    padding: 16px 20px;
-  }
   .container .product_list-content .content_left {
     padding-right: 10px;
     padding-left: 10px;
@@ -1504,9 +1452,6 @@ ion-icon {
   }
 }
 @media only screen and (max-width: 800px) {
-  .container .nav_bottom-center .list_ionc li {
-    padding: 0px 10px;
-  }
   .card_wrapper .centerr_flex .flex_content .right .button_content {
     padding-top: 20px !important;
   }
@@ -1529,8 +1474,21 @@ ion-icon {
   .card_wrapper .center_flex .row .right .button_content button {
     padding: 5px 50px;
   }
+  .container .nav_bottom-center .ul_list li a i {
+    font-size: 18px;
+  }
+  .container .nav_bottom-center .ul_list li a {
+    font-size: 13px;
+  }
+  .container .input_text {
+    margin: 5px 10px;
+    height: 35px;
+  }
 }
 @media only screen and (max-width: 768px) {
+  .container .nav_bottom .center_flex {
+    justify-content: space-between !important;
+  }
   .container .nav_bottom-center .ul_list {
     display: none;
   }
@@ -1623,6 +1581,10 @@ ion-icon {
   }
   .picture_content .center_flex h4 {
     width: 80%;
+  }
+  .container .nav_bottom .center_flex {
+    justify-content: center !important;
+    padding: 0px 10px 0px 0px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -1766,15 +1728,13 @@ ion-icon {
   }
   .list_contest {
     display: none !important;
+    width: 100%;
   }
   .accordion2 {
     display: block !important;
   }
   .swiper-scrollbar {
     display: none !important;
-  }
-  .col-9 {
-    width: 100% !important;
   }
 }
 @media only screen and (max-width: 525px) {
@@ -1807,21 +1767,8 @@ ion-icon {
   .container .input_text1 {
     display: none;
   }
-  .container .nav_bottom-center .list_container {
-    padding: 5px 20px;
-  }
   .search_content {
     display: block;
-  }
-  .menu {
-    display: none !important;
-  }
-  .menu1 {
-    display: block !important;
-  }
-  .menu1 i {
-    color: white;
-    font-size: 32px;
   }
   #non {
     display: none;
@@ -1854,6 +1801,10 @@ ion-icon {
   .card_wrapper .centerr_flex .flex_content .right .icon {
     width: 60%;
     justify-content: space-between;
+  }
+  .container .nav_bottom .center_flex .row {
+    justify-content: space-between !important;
+    width: 100% !important;
   }
 }
 @media only screen and (max-width: 435px) {

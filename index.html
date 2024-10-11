@@ -11,56 +11,89 @@
 </head>
 <body>
     <div class="container">
-                <!-- Thanh nav đầu của Header trên cùng -->
-                <div class="nav_top">
-                    <p id="non">*Free Shipping For Adiclub Members And All Orders In App*</p>
-                    <p id="none">*Free Shipping For Adiclub Members *</p>
+                <!-- Boostrap Thanh nav đầu của Header trên cùng -->
+                <div class="nav_top w-100 text-center">
+                    <p class="d-none d-sm-none d-md-block">*Free Shipping For Adiclub Members And All Orders In App*</p>
+                    <p class="d-sm-block d-md-none">*Free Shipping For Adiclub Members *</p>
                 </div>
-                <!-- Thanh nav đầu của Menu trên cùng -->
-                <div class="nav_bottom">
+                <!-- Boostrap Thanh nav đầu của Menu trên cùng -->
+                <div class="nav_bottom p-2 ">
                     <div class="nav_bottom-center">
-                        <div class="list_container">
-                            <img src="./image/adidas 1.png" alt="">
-                            <ul class="ul_list">
-                                <li><a href="#" >MEN</a></li>
-                                <li><a href="#">WOMEN</a></li>
-                                <li><a href="#" style="font-weight: bold;">UP TO 20% OFF</a></li>
-                                <li><a href="#" style="display: flex;"><i style="font-family: 'Times New Roman', Times, serif;">ADI</i><p style="font-weight: bold;font-size: 18px;">CLUB</p></a></li>
-                            </ul>
-                            <!--List Menu-->
-                            <div class="input_text1">
-                                <input type="text" placeholder="Search">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </div>
-                            <div class="menu1"><i class="fa-solid fa-bars" onclick="Clickcontent()"></i></div>
-                            <div class="search" id="hello">
-                                <div class="center_flex">
-                                    <input type="text" placeholder="Search">
-                                    <i class="fa-solid fa-xmark" onclick="Close()"></i>
+                        <div class="center_flex w-100">
+                            <div class="row col-md-12 col-xl-12 justify-content-md-around justify-content-xl-center align-items-center ">
+                                <div class="d-none d-sm-none d-md-block col-md-1 col-xl-1">
+                                    <img src="./image/adidas 1.png" alt="">
+                                </div>
+                                <div class="d-none d-sm-none d-md-block col-md-6 col-xl-4">
+                                    <ul class="ul_list d-flex align-items-center">
+                                        <li class="col-md-2 col-xl-3 p-2"><a href="#" >MEN</a></li>
+                                        <li class="col-md-3 col-xl-3 p-2"><a href="#">WOMEN</a></li>
+                                        <li class="col-md-4 col-xl-4 p-2"><a href="#" style="font-weight: bold;">UP TO 20% OFF</a></li>
+                                        <li class="col-md-3 col-xl-4 p-2"><a href="#" class="d-flex"><i>ADI</i><p id="club">CLUB</p></a></li>
+                                    </ul>
+                                </div>
+                                <div class="d-none d-sm-none d-md-block col-md-3 col-xl-2">
+                                    <div class="input_text">
+                                        <input type="text" placeholder="Search">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>             
+                                </div>
+                                <div class="d-none d-sm-none d-md-block col-md-2 col-xl-2">
+                                    <ul class="ul_list1 list_ionc d-flex align-items-center justify-content-center">
+                                        <li class="col-4 d-md-none">
+                                            <div class="search_content">
+                                                <i class="fa-solid fa-magnifying-glass" onclick="Search()"></i>    
+                                            </div>
+                                        </li>
+                                        <li class="d-sm-block d-md-none" id="non"><div class="menu"><i class="fa-solid fa-bars" onclick="Clickcontent()"></i></div></li>
+                                        <li class="d-md-block col-2" id="non"><a href="#"><i class="fa-solid fa-heart" id="icon"></i></a></li>
+                                        <li class="col-2"><a href="#"><i class="fa-solid fa-circle-user" id="icon"></i></a></li>
+                                        <li class="col-2"><a href="#"><i class="fa-solid fa-box-archive" id="icon"></i></a></li>
+                                    </ul>
+                   
+                                </div>
+                                <!--List Menu-->
+                                <div class="row col-12 align-items-center justify-content-between justify-content-md-between">
+                                    <div class="d-none d-sm-block d-md-none col-4 col-sm-5">
+                                        <div class="input_text1">
+                                            <input type="text" placeholder="Search">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+            
+                                    </div>
+                                    <div class="col-2 d-block d-sm-none d-md-none">
+                                        <div class="menu1"><i class="fa-solid fa-bars" onclick="Clickcontent()"></i></div>
+                                    </div>
+                                    <div class="d-sm-none d-md-none d-md-none search" id="hello">
+                                        <div class="center_flex">
+                                            <input type="text" placeholder="Search">
+                                            <i class="fa-solid fa-xmark" onclick="Close()"></i>
+                                        </div>
+                                    </div>
+                                    <div class="d-md-none col-4 col-sm-4 d-flex justify-content-center">
+                                        <img src="./image/adidas 1.png" alt="">
+                                    </div>
+                                    <div class="d-md-none col-4 col-sm-3 col-md-4 ">
+                                        <ul class="ul_list1 list_ionc d-flex align-items-center justify-content-center">
+                                            <li class="col-2 d-md-none">
+                                                <div class="search_content">
+                                                    <i class="fa-solid fa-magnifying-glass" onclick="Search()"></i>    
+                                                </div>
+                                            </li>
+                                            <li class="d-sm-block d-md-none" id="non"><div class="menu"><i class="fa-solid fa-bars" onclick="Clickcontent()"></i></div></li>
+                                            <li class="d-md-block col-2" id="non"><a href="#"><i class="fa-solid fa-heart" id="icon"></i></a></li>
+                                            <li class="col-2"><a href="#"><i class="fa-solid fa-circle-user" id="icon"></i></a></li>
+                                            <li class="col-2"><a href="#"><i class="fa-solid fa-box-archive" id="icon"></i></a></li>
+                                        </ul>
+                       
+                                    </div>
+                                    
+                                </div>
                                 </div>
                             </div>
-                            
-                            <div class="img_center"><img src="./image/adidas 1.png" alt=""></div>
-                            <!--Responsive content-->
-                            <div class="input_text">
-                                <input type="text" placeholder="Search">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </div>
-                            <ul class="ul_list1 list_ionc">
-                                <li>
-                                    <div class="search_content">
-                                        <i class="fa-solid fa-magnifying-glass" onclick="Search()"></i>    
-                                    </div>
-                                </li>
-                                <li id="non"><div class="menu"><i class="fa-solid fa-bars" onclick="Clickcontent()"></i></div></li>
-                                <li id="non"><a href="#"><i class="fa-solid fa-heart" id="icon"></i></a></li>
-                                <li><a href="#"><i class="fa-solid fa-circle-user" id="icon"></i></a></li>
-                                <li><a href="#"><i class="fa-solid fa-box-archive" id="icon"></i></a></li>
-                            </ul>
                         </div>
-                    </div>
                 </div>
-                <!--Menu Mobile-->
+                <!--Bostrap Menu Mobile-->
                 <div class="menu_list" id="menu1">
                     <ul class="ul_list1">
                         <li><a href="#">MEN</a></li>
@@ -69,7 +102,7 @@
                         <li><a href="#" style="display: flex;"><i>ADI</i><p style="font-weight: bold;font-size: 18px;">CLUB</p></a></li>
                     </ul>
                 </div>
-                <!--Slider ảnh-->
+                <!--Boostrap Slider ảnh-->
                 <div class="carousel">
                     <div class="carousel_content">
                         <div class="button_register">
@@ -95,7 +128,7 @@
                     </div>
                     
                 </div>
-                <!--Product List-->
+                <!--Boostrap Product List-->
                <div class="product_list">
                     <div class="product_list-content">
                         <div class="center_flex">
@@ -295,11 +328,12 @@
                                 </div>
                             </div>
                             <!--List Product-->
-                            <div class="col-9 col-sm-8 content_right">
+                            <div class="col-12 col-sm-8 content_right">
                                 <div class="product_content">
                                     <div class="row ">
                                         <div class="
                                         item
+                                         col-6
                                          col-sm-6 
                                          col-md-4 
                                          " id="list" data-id="gazelle" data-category="t-shirt adizero man white 2024">
@@ -641,9 +675,9 @@
 
                     </div>
                 </div>
-                <!--Banner Addidas-->
-                <div class="banner_content">
-                    <div class="banner_content-bg content_bg bg_content">
+                <!--Boostrap Banner Addidas--> 
+                <div class="banner_content w-100 position-relative">
+                    <div class="banner_content-bg content_bg bg_content col-12 col-sm-12 col-md-12">
                         <h2>Become a member & get 15% off at <i>ADI</i>Club</h2>
                         <div class="button_signup">
                             <button>
@@ -654,7 +688,7 @@
                     </div>
                   
                 </div>
-                <!--Footer Content-->
+                <!--Boostrap Footer Content-->
                 <div class="footer_content">
                     <div class="center_flex">
                         <div class="row list_contest">
@@ -735,30 +769,30 @@
                         </div>
                     </div>
                 </div>
-                <!--Icon List-->
-                <div class="list_icon">
-                    <div class="list_icon-content">
-                      <div class="icon_list">
+                <!--Boostrap Icon List-->
+                <div class="list_icon w-100 position-relative">
+                    <div class="list_icon-content center_flex">
+                      <div class="icon_list row">
                         <ul>
-                            <li><a href="#"><ion-icon name="logo-facebook" class="icon_ion" id="facebook"></ion-icon></a></li>
-                            <li><a href="#"><ion-icon name="logo-instagram" class="icon_ion" id="instagram"></ion-icon></a></li>
-                            <li><a href="#"><ion-icon name="logo-snapchat" class="icon_ion" id="snap_chat"></ion-icon></a></li>
-                            <li><a href="#" id="content">|</a></li>
-                            <li><a href="#"><img src="./image/icon/pngegg.png" alt="" id="visa"></a></li>
-                            <li><a href="#"><img src="./image/icon/pngwing.com.png" alt="" id="mastercard"></a></li>
-                            <li><a href="#"><img src="./image/icon/pngegg (1).png" alt="" id="paypal"></a></li>
-                            <li><a href="#"><img src="./image/icon/pngegg (2).png" alt=""></a></li>
-                            <li><a href="#"><img src="./image/icon/pngwing.com (1).png" alt=""></a></li>
-                            <li><a href="#"><img src="./image/icon/pngwing.com (2).png" alt=""></a></li>
-                            <li><a href="#"><img src="./image/icon/pngwing.com (3).png" alt=""></a></li>
-                            <li><a href="#"><img src="./image/icon/pngwing.com (4).png" alt=""></a></li>
-                            <li><a href="#" id="afterpay"><img src="./image/icon/Afterpay_Loop_White-1382x1228-ea517d7.png" alt=""></a></li>
+                            <li class="col col-sm-1 p-2"><a href="#"><ion-icon name="logo-facebook" class="icon_ion" id="facebook"></ion-icon></a></li>
+                            <li class="col col-sm-1 p-2"><a href="#"><ion-icon name="logo-instagram" class="icon_ion" id="instagram"></ion-icon></a></li>
+                            <li class="col col-sm-1 p-2"><a href="#"><ion-icon name="logo-snapchat" class="icon_ion" id="snap_chat"></ion-icon></a></li>
+                            <li class="col col-sm-1 p-2"><a href="#" id="content">|</a></li>
+                            <li class="col col-sm-2 p-2"><a href="#"><img src="./image/icon/pngegg.png" alt="" id="visa"></a></li>
+                            <li class="col col-sm-2 p-2"><a href="#"><img src="./image/icon/pngwing.com.png" alt="" id="mastercard"></a></li>
+                            <li class="col col-sm-2 p-2"><a href="#"><img src="./image/icon/pngegg (1).png" alt="" id="paypal"></a></li>
+                            <li class="col col-sm-2 p-2"><a href="#"><img src="./image/icon/pngegg (2).png" alt=""></a></li>
+                            <li class="col col-sm-2 p-2"><a href="#"><img src="./image/icon/pngwing.com (1).png" alt=""></a></li>
+                            <li class="col col-sm-2 p-2"><a href="#"><img src="./image/icon/pngwing.com (2).png" alt=""></a></li>
+                            <li class="col col-sm-2 p-2"><a href="#"><img src="./image/icon/pngwing.com (3).png" alt=""></a></li>
+                            <li class="col col-sm-2 p-2"><a href="#"><img src="./image/icon/pngwing.com (4).png" alt=""></a></li>
+                            <li class="col col-sm-2 p-2"><a href="#" id="afterpay"><img src="./image/icon/Afterpay_Loop_White-1382x1228-ea517d7.png" alt=""></a></li>
                         </ul>
                       </div>
                     </div>
                 </div>
                 <!--Footer End-->
-                <div class="footer_end">
+                <div class="footer_end ">
                     <div class="footer_end-bg">
                         <div class="text_content">
                             <div class="text_a">

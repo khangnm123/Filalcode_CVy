@@ -29,69 +29,45 @@
         }
     }
     .nav_bottom{
-        width: 100%;
-        background-color: #000;
-        &-center{
-            position: relative;
-            .list_container{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                img{
-                    height: 41px;
-                }
+        background-color: #000000;
+    }
+    .ul_list{
+        list-style-type: none;
+        li{
+            a{
+                text-decoration: none;
+                color: #FFFFFF;
+                font-weight: bold;
             }
-            .ul_list{
-                display: flex;
-                align-items: center;
-                list-style-type: none;
-                justify-content: center;
-                padding: 10px 0px;
-                li{
-                    padding: 15px 45px;
-                    a{
-                        color: white;
-                        text-decoration: none;
-                        font-size: 16px;
-                        #icon{
-                            font-size: 30px;
-                        }
-                        i{
-                            font-size: 19px;
-                        }
-                    }
-                }
+            i{
+                font-size: 18px;
+                font-family: 'Times New Roman', Times, serif;
             }
-            .list_ionc{
-                display: flex;
-                align-items: center;
-                list-style-type: none;
-                justify-content: center;
-                padding: 10px 0px;
-                li{
-                    padding: 0px 15px;
-                    a{
-                        color: white;
-                        text-decoration: none;
-                        font-size: 16px;
-                        #icon{
-                            font-size: 30px;
-                        }
-                    }
+        }
+    }
+    .list_ionc{
+        list-style-type: none;
+        li{
+            margin: 0px 10px;
+            a{
+                font-size: 18px ;
+                i{
+                    font-size: 32px;
+                    color:#FFFFFF ;
                 }
             }
         }
     }
     .input_text{
-        width: 320px;
+        width: 100%;
         height: 45px;
         background: #D9D9D9;
         border: 1px solid #D9D9D9;
-        padding: 20px 20px;
+        padding: 10px 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 10px 30px;
+        margin: 10px 10px;
     input{
         border: none;
         outline: none;
@@ -99,26 +75,6 @@
         width: 100%;
         color: #000;
         font-size: 18px;
-    }
-    }
-    .input_text1{
-        width: 320px;
-        height: 45px;
-        background: #D9D9D9;
-        border: 1px solid #D9D9D9;
-        padding: 20px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 10px 30px;
-        display: none;
-    input{
-        border: none;
-        outline: none;
-        background: none;
-        width: 100%;
-        color: #000;
-        font-size: 16px;
     }
     }
     .carousel{
@@ -165,9 +121,8 @@
         }
     }
     .banner_content{
-        position: relative;
-        width: 100%;
         background-color: #000000;
+        padding: 10px 0px;
         &-bg{
             background: url('../image/Details/1440x\ 176\ pc\ mới.gif');
             object-fit: cover;
@@ -210,12 +165,8 @@
         }
     }
     .footer_end{
-        width: 100%;
-        position: relative;
         background-color: #9747FF;
         &-bg{
-            display: flex;
-            justify-content: center;
             padding: 30px 10px;
             .text_content{
                 display: flex;
@@ -228,6 +179,7 @@
                     font-weight: 100;
                 }
             }
+            
         }
     }
     .item{
@@ -278,6 +230,26 @@
     .product_list{
         padding: 30px 0px;
     }
+}
+.input_text1{
+    width: 100%;
+    height: 45px;
+    background: #D9D9D9;
+    border: 1px solid #D9D9D9;
+    padding: 20px 20px;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 30px;
+    display: none;
+input{
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    color: #000;
+    font-size: 16px;
+}
 }
 //Ky Thuat Thumnails
 .thumnail_text{
@@ -386,6 +358,9 @@
     a{
         color: #FFFFFF;
     }
+}
+#club{
+    font-size: 16px;
 }
 // Import Range Price
 @import './content_scss/Range_.scss';
