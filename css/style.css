@@ -1328,6 +1328,24 @@ ion-icon {
   display: none !important;
 }
 
+.footer_end1 {
+  background-color: #9747FF;
+}
+.footer_end1-bg {
+  padding: 30px 10px;
+}
+.footer_end1-bg .text_content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.footer_end1-bg .text_content a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 100;
+}
+
 @media only screen and (max-width: 1600px) {
   .container .nav_bottom-center .ul_list li a {
     font-size: 15px;
@@ -1863,6 +1881,13 @@ ion-icon {
   }
   .container .nav_bottom-center .list_container .img_center img {
     height: 24px !important;
+  }
+  .footer_end1 {
+    background: #000;
+  }
+  .footer_end1-bg .text_content {
+    flex-wrap: wrap;
+    padding: 0px 10px;
   }
   .heart1 ion-icon {
     width: 20px;
